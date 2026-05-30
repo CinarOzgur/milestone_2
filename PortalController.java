@@ -17,7 +17,7 @@ public class PortalController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @GetMapping("/analytics")
+    @GetMapping("/index")
     public String getDashboard(
             @RequestParam(name = "roadSurface", required = false, defaultValue = "Wet") String roadSurface,
             @RequestParam(name = "lightCondition", required = false, defaultValue = "Night (Street lights off)") String lightCondition,
